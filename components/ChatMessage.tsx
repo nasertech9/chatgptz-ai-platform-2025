@@ -1,0 +1,38 @@
+
+import React from 'react';
+import { Message } from '../types';
+import { BotIcon, UserIcon } from './Icons';
+
+interface ChatMessageProps {
+  message: Message;
+}
+
+const ChatMessage: React.FC<ChatMessageProps> = ({ message }) => {
+  const isBot = message.author === 'bot';
+
+  return (
+    <div className={`flex items-start gap-4 animate-fade-in ${isBot ? '' : 'justify-end'}`}>
+      {isBot && (
+        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center text-white">
+          <BotIcon />
+        </div>
+      )}
+      <div
+        className={`max-w-lg md:max-w-2xl px-4 py-3 rounded-2xl ${
+          isBot
+            ? 'bg-white dark:bg-gray-800 rounded-tl-none shadow-md'
+            : 'bg-purple-600 text-white rounded-br-none shadow-lg'
+        }`}
+      >
+        <p className="whitespace-pre-wrap">{message.content}</p>
+      </div>
+      {!isBot && (
+        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gray-300 dark:bg-gray-700 flex items-center justify-center">
+          <UserIcon />
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default ChatMessage;

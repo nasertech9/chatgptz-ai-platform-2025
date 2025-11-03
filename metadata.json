@@ -1,0 +1,7 @@
+{
+  "name": "ChatGPTZ - Futuristic AI Chat",
+  "description": "A powerful and intelligent conversational AI platform that enables users to chat, generate content, and explore AI creativity in real time with a futuristic UI.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
