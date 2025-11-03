@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -59,6 +58,36 @@
       }
       .dark ::-webkit-scrollbar-thumb:hover {
         background: rgba(0, 0, 0, 0.4);
+      }
+      /* Custom styles for rendered markdown */
+      .chat-message-content .code-block {
+        background-color: #e5e7eb; /* gray-200 */
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        overflow-x: auto;
+        font-family: monospace;
+        font-size: 0.875rem;
+        margin: 0.5rem 0;
+        color: #1f2937; /* gray-800 */
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      .dark .chat-message-content .code-block {
+        background-color: #111827; /* gray-900 */
+        color: #d1d5db; /* gray-300 */
+        border: 1px solid rgba(255,255,255,0.1);
+      }
+      .chat-message-content .inline-code {
+        background-color: rgba(128, 90, 213, 0.1); /* purple-500/10 */
+        color: #8b5cf6; /* purple-500 */
+        padding: 0.1rem 0.3rem;
+        border-radius: 0.25rem;
+        font-size: 0.875rem;
+        font-family: monospace;
+      }
+      .dark .chat-message-content .inline-code {
+        background-color: rgba(167, 139, 250, 0.2); /* purple-400/20 */
+        color: #a78bfa; /* purple-400 */
       }
     </style>
   <script type="importmap">

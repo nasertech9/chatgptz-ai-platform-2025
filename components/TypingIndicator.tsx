@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { BotIcon } from './Icons';
 
@@ -9,10 +8,13 @@ const TypingIndicator: React.FC = () => {
         <BotIcon />
       </div>
       <div className="max-w-lg px-4 py-3 rounded-2xl bg-white dark:bg-gray-800 rounded-tl-none shadow-md">
-        <div className="flex items-center justify-center space-x-1 h-5">
-            <div className="w-2 h-2 bg-gray-400 rounded-full animate-pulse-dot-1"></div>
-            <div className="w-2 h-2 bg-gray-400 rounded-full animate-pulse-dot-2"></div>
-            <div className="w-2 h-2 bg-gray-400 rounded-full animate-pulse-dot-3"></div>
+        <div className="flex items-center space-x-2 text-sm text-gray-500 dark:text-gray-400">
+            <span>ChatGPTZ is thinking</span>
+            <div className="flex items-center justify-center space-x-1 h-5">
+                <div className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-pulse-dot-1"></div>
+                <div className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-pulse-dot-2"></div>
+                <div className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-pulse-dot-3"></div>
+            </div>
         </div>
       </div>
     </div>
