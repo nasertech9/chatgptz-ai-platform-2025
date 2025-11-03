@@ -81,7 +81,7 @@ export const VolumeOnIcon = createIcon(
 );
 
 export const VolumeOffIcon = createIcon(
-    <path strokeLinecap="round" strokeLinejoin="round" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" clipRule="evenodd" /><path strokeLinecap="round" strokeLinejoin="round" d="M17 14l-4-4m0 4l4-4" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 4.06v15.88a2.25 2.25 0 003.473 1.942l4.28-3.057a2.25 2.25 0 000-3.884l-4.28-3.057A2.25 2.25 0 009 4.06zM16.5 12l4.5-4.5m0 4.5-4.5-4.5" />
 );
 
 export const StopIcon = createIcon(
